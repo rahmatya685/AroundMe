@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.VenueMapFragment">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabMyLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        app:backgroundTint="@color/app_blue_dark_fab"
+        android:baselineAlignBottom="false"
+        android:src="@drawable/gps_fixed_indicator"
+        app:fabSize="mini"
+        app:layout_anchorGravity="top|right" />
+    <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:apiKey="AIzaSyCdBHzo4tEyIvTD6lqFooCRnVcP1AQ8GOQ"
+
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:indeterminate="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/transparent"
+        android:visibility="gone" />
+</FrameLayout>

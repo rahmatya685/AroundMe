@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+         <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name = "android:windowActionBar">false</item>
+        <item name = "android:windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/taskbarcolor</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/taskbarcolor</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/byekan</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--buttons color-->
+        <item name="colorAccent">@color/app_blue_dark</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">#000000</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/alert_dialog_drawable</item>
+        <item name="android:buttonBarButtonStyle">@style/AlertdialogNegativeButtonStyle</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/byekan</item>
+
+    </style>
+    <style name="AlertdialogNegativeButtonStyle">
+        <item name="android:background">#FFA500</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+    <style name="FullScreenDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:divider">@color/app_blue_dark_transparent</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:windowBackground">@color/app_white</item>
+
+    </style>
+</resources>

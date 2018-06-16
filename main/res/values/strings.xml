@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AroundMe</string>
+    <string name="baseUrl">https://api.foursquare.com/v2/venues/search</string>
+    <string name="client_id">DABMH0H5QPYKWZAS3LJQOEAJLNTGYITTPI2LTNJROPKBCHYX</string>
+    <string name="client_secret">TM0C1FTRWTD5MFAAKWY1O2ZAG1P5KAU0Z0UAM0HGYIW0JKUP</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="list_view">لیست</string>
+    <string name="map_view">نقشه</string>
+    <string name="msg_info_enable_gps"> موقعیت (Location) فعال نیست. آیا فعال شود ؟</string>
+    <string name="label_ok">تایید</string>
+    <string name="label_cancel">انصراف</string>
+    <string name="label_searching">در حال جستجو...</string>
+</resources>
